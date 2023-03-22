@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Covid-Stats</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="index.html">Covid Statistics</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Data-Table</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="newsletter.html">Newsletter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container">
+      <h1 class="text-center">THE COVID STATISTICS</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <table class="table" id="covidtable">
+                    <thead class="thead">
+                        <tr>
+                            <th>
+                                COUNTRY
+                            </th>
+                            <th>
+                                CONFIRMED 
+                            </th>
+                            <th>
+                                ACTIVE
+                            </th>
+                            <th>
+                                RECOVERED
+                            </th>
+                            <th>
+                                DEATHS
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+
+                    </tbody>
+
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="container">
+  <h4 class="text-center">**All the above Data is from WHO**</h4>
+
+  <div class="newsletter">
+  
+      <h2>SUBSCRIBE TO OUR NEWSLETTER FOR ANY UPDATES</h2>
+  <section class="section_form">
+      <form id="consultation-form" class="feed-form" action="#">
+        <input required="" placeholder="Name" type="text">
+        <input name="phone" required="" placeholder="Phone number">
+        <input name="email" required="" placeholder="E-mail" type="email">
+        
+        <button type="button" class="btn btn-danger" id="liveToastBtn">SUBSCRIBE</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">NEWSLETTER</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Subscribed to newslatter
+    </div>
+  </div>
+</div>
+
+
+
+      </form>
+    </section>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, necessitatibus quos? Nemo molestiae perspiciatis sit aliquam tenetur consectetur voluptatum, ipsum quidem error praesentium accusamus accusantium pariatur totam debitis magni quia?
+      Maxime cupiditate, minima temporibus perspiciatis libero necessitatibus doloribus iusto recusandae earum suscipit, quidem velit pariatur magni esse quaerat, autem itaque in ex illo quasi aspernatur officiis commodi? Vel, sunt fugiat.
+      Eum illo illum libero consectetur natus commodi ea quas porro et. Officia cupiditate molestias delectus qui optio obcaecati, laborum maxime ducimus rerum, quibusdam accusamus repellat hic eligendi quod ex nihil.</p>
+      
+</div>
+
+
+<div class="footer">
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Covid-Stats</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Covid-Stats © 2023</p>
+        </div>
+    </footer>
+</div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="function.js"></script>
+</body>
+</html>
